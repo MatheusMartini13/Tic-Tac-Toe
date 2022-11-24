@@ -100,6 +100,9 @@ function check(usedSimbol){
       mainMatrix[0][2]===usedSimbol & mainMatrix[1][1]===usedSimbol & mainMatrix[2][0] === usedSimbol ){
       warnings.innerHTML = "<h1 style='color: white; background-color: green; padding: 10px 20px'>" + playerName() + " venceu o jogo!</h1>"
       gameOver = 1;
+      } else if (!mainMatrix[0].includes(0) & !mainMatrix[1].includes(0) & !mainMatrix[2].includes(0)){
+      warnings.innerHTML = "<h1 style='color: white; background-color: green; padding: 10px 20px'>O jogo empatou!</h1>"
+      gameOver = 1;        
       }
   }
 
