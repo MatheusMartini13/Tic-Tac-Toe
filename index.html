@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>TicTacToe</title>
+</head>
+<body>
+  <div class="div2 names">
+    <div>
+      <label for="Jogador1">Nome do Jogador X</label>
+      <br>
+      <input type="text" name="Jogador1" id="Jogador1">
+    </div>
+    <div>
+      <label for="Jogador2">Nome do Jogador O</label>
+      <br>
+      <input type="text" name="Jogador2" id="Jogador2">
+    </div>
+  </div>
+  <div class="div2">
+  <div class="mainDiv">
+    <button class="ticTac" data-position="1"></button>
+    <button class="ticTac border2" data-position="2"></button>
+    <button class="ticTac" data-position="3"></button>
+  </div>  <div class="mainDiv">
+    <br><br>
+    <button class="ticTac border3" data-position="4"></button>
+    <button class="ticTac border1" data-position="5"></button>
+    <button class="ticTac border3" data-position="6"></button>
+    <br><br></div><div class="mainDiv">
+    <button class="ticTac" data-position="7"></button>
+    <button class="ticTac border2" data-position="8"></button>
+    <button class="ticTac" data-position="9"></button>
+    </div></div>
+
+    <div id="win" class="mainDiv">
+      <div id="mainText"><h1>Digite o nome dos jogadores!</h1></div>
+      <br><br>
+      <button class="btnRestart" onclick="reset()">Reiniciar</button>
+    </div>
+</body>
+</html>
